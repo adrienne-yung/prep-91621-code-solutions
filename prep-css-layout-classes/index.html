@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+/* stylelint-disable block-no-empty */
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 992px;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.column {
+  flex-basis: calc(100% / 3);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.img {
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: brown;
+}
+
+  </style>
+</head>
+<body>
+<div>
+  <h3> Lord of the Rings</h3>
+</div>
+<div class= "container">
+  <div class= "row">
+    <div class="column">
+      <img
+      src="https://images-na.ssl-images-amazon.com/images/I/51fnjwCIy5L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"/>
+
+      <h4>Fellowship of the Ring</h4>
+
+      <p>
+        Dark Lord Sauron searches for the One Ring that contains a part of his soul. Frodo comes across this ring and joins several companions on a journey to Mount Doom, the only place where the ring can be destroyed. On this journey, the main characters encounter the dark forces and orcs that await and prepare for the wake of Sauron.
+      </p>
+
+  </div>
+  <div class="column">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41SpvWGJEdL._SX258_BO1,204,203,200_.jpg"/>
+
+    <h4>The Two Towers</h4>
+
+    <p> Sam and Frodo head towards Mordor to destroy the ring, meeting Gollum. Gollum, the previous owner of the ring, is torn between his two personalities upon encountering the two. Aragorn, Legolas, and Gimli fight forces of Saruman at the Battle of Helm's Deep. When the battle looks bleak for our main characters, Gandalf comes in with his reinforcements.
+    </p>
+
+  </div>
+
+  <div class="column">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51W+gk6vRHL._SY344_BO1,204,203,200_.jpg"/>
+
+    <h4>The Return of the King</h4>
+
+    <p>This is the last of the Lord of the Rings trilogy. Frodo and Sam follow Gollum to Mount Doom to have the ring meet its end, unaware of Gollum's true intentions. The other characters are fighting Sauron and his allies in Minas Tirith.</p>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
